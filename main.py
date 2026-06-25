@@ -1,5 +1,11 @@
 
-import cv2
+#import cv2
 
-print("OpenCV version:", cv2.__version__)
-print("Hello from Python")
+#print("Package imported successfully")
+
+#img = cv2.imread("images/sunset.jpg")
+
+#cv2.imshow("output", img)
+
+#cv2.waitKey(0)
+#cv2.destroyAllWindows()
