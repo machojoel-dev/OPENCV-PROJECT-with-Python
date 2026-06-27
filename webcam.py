@@ -1,21 +1,21 @@
 import cv2
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
-    print("Cannot open webcam.")
+    print("Error: Cannot open camera")
     exit()
 
 while True:
-    success, img = cap.read()
+    ret, frame = cap.read()
 
-    if not success:
-        print("Failed to grab frame.")
+    if not ret:
+        print("Error: Cannot read frame")
         break
 
-    cv2.imshow("Video", img)
+    cv2.imshow("video", frame)
 
-    if cv2.waitKey(1) & 0xFF == ord("q"):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
