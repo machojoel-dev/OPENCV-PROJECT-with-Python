@@ -27,11 +27,11 @@ eroded_image = cv2.erode(dilated_image, kernel, iterations=1)
 
 # Show each result
 cv2.imshow("Original", image)
-cv2.imshow("Grayscale", gray_image)
-cv2.imshow("Blurred", blurred_image)
+#cv2.imshow("Grayscale", gray_image)
+#cv2.imshow("Blurred", blurred_image)
 cv2.imshow("Edges", edges)
-cv2.imshow("Dilated", dilated_image)
-cv2.imshow("Eroded", eroded_image)
+#cv2.imshow("Dilated", dilated_image)
+#cv2.imshow("Eroded", eroded_image)
 
 # Wait until a key is pressed
 cv2.waitKey(0)
