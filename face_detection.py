@@ -6,7 +6,7 @@ faceCascade = cv2.CascadeClassifier(
 )
 
 # Load image
-img = cv2.imread("images/woman.jpg")
+img = cv2.imread("images/costumes.jpg")
 
 # Safety check
 if img is None:
